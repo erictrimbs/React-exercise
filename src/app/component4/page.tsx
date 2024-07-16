@@ -2,7 +2,7 @@
 import React from 'react';
 import Header from '../components/Header';
 // import HardCodedDataComponent from '../components/HardCodedDataComponent';
-import { HardCodedDataComponent, UserInputDataComponent } from '../components/DataComponents';
+import { HardCodedDataComponent, UserInputDataComponent } from './DataComponents';
 
 
 const Component4: React.FC = () => {
