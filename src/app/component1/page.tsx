@@ -45,8 +45,8 @@ const XCoordinate = ({ x, negative }: { x: number, negative: boolean }) => {
       height: '20px',
       border: '1px solid black',
       padding: '3px',
-      boxSizing: 'border-box',
-      position: 'relative',
+      boxSizing: 'border-box' as 'border-box',
+      position: 'relative' as 'relative',
       overflow: 'hidden',
       backgroundColor: 'white',
     };
@@ -54,14 +54,14 @@ const XCoordinate = ({ x, negative }: { x: number, negative: boolean }) => {
     const innerBarStyle = {
       width: '100%',
       height: '100%',
-      position: 'relative',
+      position: 'relative' as 'relative',
     };
   
     const fillStyle = {
       width: `${fillWidth - 8}px`, // Subtract padding (3px on each side)
       height: '100%',
       backgroundColor: 'red',
-      position: 'absolute',
+      position: 'absolute' as 'absolute',
       top: '0',
       left: !negative ? '0' : 'unset',
       right: negative ? '0' : 'unset',
